@@ -1,1 +1,18 @@
-jkjdkjhdiu
+.out-content{width: 100%;background: #f5f5f5;}
+.detail-content{margin: 0 auto;width: 1200px;min-height: 700px;}
+.detail-goods{height: 550px;background: #FFF;width: 1200px;position: relative; top: 56px;}
+.right-top,.left-top{float: left;}
+.right-top{width: 460px;margin: 10px; }
+
+.d-img{width: 460px;height: 460px;border: 1px solid #ddd;overflow: hidden;}
+.d-img span{display: block;position: relative;}
+.d-img img{width: 460px;height: 460px;}
+.s-img li{float: left; width: 60px;height: 60px; margin: 10px 32px 0 0;}
+.s-img li.active{border: 2px solid #ed4242;}
+
+.left-top{width: 660px;height: 313px; margin:16px 0 0 55px;}
+.left-top .carriage{display: block;color: #fff; background: #ed4242;width: 43px;text-align: center;font-size: 12px;}
+.left-top h3{margin-top: -17px;width: 630px;}
+.left-top .shop-num{color: #616161;font-size: 14px;line-height: 2;}
+.left-top .comefrom{color: #999999;  margin-left: 136px;}
+

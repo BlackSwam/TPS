@@ -1,0 +1,6 @@
+/*滑动图*/
+.d-img span .minzoom{position: absolute;width:262px;height:262px;background-color:#0f0;background-color: rgba(255,255,0,.3);filter:alpha(Opacity=30);}
+
+/*大图*/
+.lxbzoom{position: absolute;width:460px;height:460px;overflow:hidden; border: 1px solid #ddd;}
+.lxbzoom img{position: absolute;left:0;right:0; }

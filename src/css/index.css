@@ -1,0 +1,73 @@
+p{font-size: 12px;}
+.content,.new,.newgoods,.out-goods,.history{width: 1200px;margin: 0 auto;}
+/*banner*/
+.banner {width: 100%;height: 450px;}
+.banner ul{width: 100%;height: 450px;overflow: hidden;margin: 0 auto;}
+.banner a{display:block; }
+.banner a img{ width: 100%;height: 450px;}
+
+/*content*/
+.out-content{width: 100%;background:#f5f5f5;min-height: 560px;overflow: hidden;}
+
+.content ul i{display:inline-block;width:49px;height: 53px;overflow: hidden;}
+.content .s1{background: url(images/ico_service.png) no-repeat 0 0;}
+.content .s2{background: url(images/ico_service.png) no-repeat -72px 0;}
+.content .s3{background: url(images/ico_service.png) no-repeat -144px 0;}
+.content .s4{background: url(images/ico_service.png) no-repeat -216px 0;}
+.content ul{padding: 50px 0 40px;}
+.content ul li{float: left; width: 175px;height: 53px;}
+.content ul p{font-size: 13px;color: #333333; margin-top: -7px;}
+.content ul span{position: relative;top: -61px;left: 60px;}
+.content .l1{margin: 0 158px;}
+.content .l2{margin-right:158px;}
+
+/*goods*/
+
+/*top*/
+.nwgoods li a{font-size: 12px;color: #333; display: inline-block; width: 175px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; position: relative; top: -83px;left: 5px}
+.nwgoods li a:hover{text-decoration: none;color: #ee4242;}
+.new{width:1200px; border-bottom: 1px solid #ddd}
+.new h3{float: left;border-left: solid 3px #ed4242;padding-left: 21px}
+.new ul{float: right;background: rgba(0,0,0,.03);margin-top: 6px;border-radius: 14px;padding: 4px 8px;font-size: 0;height: 14px;margin-top: 24px;}
+.new ul li{ display: inline-block; padding: 5px;  margin: 0 8px;border-radius: 90%; background: #fff; border: 1px solid #999;cursor: pointer; height: 0px;}
+/*新品*/
+.nwgoods{width: 1200px; height:635px;padding-top: 14px;overflow: hidden;}
+/*?????为什么不浮动*/
+.listgoods{margin: 0;height: 635px;width:1200px;float: left;}
+.listgoods .right-magin{margin-right:10px ;}
+.listgoods .top-magin{margin-top: 15px;}
+.listgoods li{width: 232px;height: 300px;background: #FFFFFF;float: left;margin: 0;}
+.gift,.car{width: 25px;height: 25px;}
+.gift{display:block;background: url(images/ico_img.png) no-repeat 0 0;position: relative; top: -224px; left: 196px}
+.car{display:block;background: url(images/ico_img.png) no-repeat -124px 0;position: relative;top: -218px;left: 196px}
+.CN{display:block;width: 16px;height: 10px;background: url(images/ico-index-flag.png) no-repeat 0 -11px; margin-left: 3px;}
+.country{position: relative; top: -47px;left: 196px;text-indent: -8px; color: #bbb;}
+.price{color: #ee4242;position: relative;top: -59px;left: -175px;}
+.hot-goods{padding-top: 15px;}
+
+/*母婴用品....*/
+.out-goods .new a{float: right; margin-top: 25px;color: #333333; }
+.use-goods{width: 1200px; height:558px; margin-top: 15px;}
+.use-dl,.goods-scroll,.use-ul{float: left; height: 500px;}
+.use-dl{width: 240px;}
+.use-dl dd{ background: #fff;margin-top: 5px;height: 174px;margin-left: 0;line-height: 2;}
+.use-dl dd a{display: block;color: #333;}
+.pos-left,.pos-right{float: left; }
+.pos-left{padding: 20px;}
+.pos-right{padding-top: 20px;}
+.goods-scroll{margin: 0 4px;}
+
+.use-ul {width: 595px;}
+.use-ul ul{width: 595px;margin-left: 3px;}
+.use-ul li{float: left;width: 293px;background: #fff; height: 245px;text-align: center;}
+.use-ul img {width: 182px;height: 182px;}
+.use-ul .gift{top:-174px;left: 262px;background: url(images/ico_img.png) no-repeat -41px 0;}
+.use-ul .car{top:-169px;left:262px}
+.use-ul .country{ width: 30px;position: relative; top: -47px;left: 265px;color: #bbb;}  
+.use-ul li a{font-size: 12px;color: #333;display: inline-block;width: 175px; overflow: hidden; white-space: nowrap;text-overflow: ellipsis; position: relative;top: -83px;left: 5px;}
+.use-ul li a:hover{text-decoration: none;color:#ee4242 ;}
+.use-ul .right-magin{margin-right: 9px;}
+.use-ul .top-magin{margin-top: 9px;}
+
+/*浏览历史*/
+.history{min-height: 100px;}

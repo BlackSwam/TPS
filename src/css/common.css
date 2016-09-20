@@ -1,0 +1,56 @@
+.top,.logo,.leader,.foot{width: 1198px; margin: 0 auto;}
+/*top*/
+.out-top{width: 100%; background: #eeeeee;height:36px;}
+.top li{cursor: pointer;}
+.top{position:absolute;height:36px;background: #eeeeee; border-bottom: 1px solid #e2e2e2;color: #333;font-size: 12px;margin: 0 32px;}
+.top .left li{float:left; width: 80px; height:36px;margin: 0 5px; text-align: center;}
+.left1 .qizhi{background: url(images/ico-index.png) no-repeat 0 -12px;height: 11px;display: block;margin-top: 13px;}
+.left1{padding-left:10px; width: 70px;}
+.left1 p{position: relative; top: -15px; left: 5px;}
+.left2 p {position: relative; top:9px;}
+
+.select p {padding: 0 5px;}
+.top .right{float: right;}
+.top .right li{float: left;height: 36px;}
+.top .right a{color:#ed4242 ; padding: 0 10px;}
+.middle{margin: 0 22px;}
+.select.onself { margin-top: -10px; line-height: 36px;width:75px;padding-left:5px ;}
+
+/*给下拉列表添加类*/
+.active{ width: 80px; height:36px; background: #fff;color:#ed4242 ;}
+
+/*搜索*/
+.out-select{width: 100%;height: 110px;} 
+.logo{padding-top: 30px;height: 75px;}
+.logo .ote{margin-top: 12px;}
+.logo .tps{display:inline-block;width: 80px;height: 80px;cursor: pointer;margin-top: -20px; }
+.logo .find{border: 1px solid #ed4242;height:34px;width: 710px;line-height: 40px; padding-left: 10px;position: relative;top: 9px;left: 61px}
+.logo .find-btn{cursor: pointer;width: 48px;height: 44px;background: #ed4242;position: relative; top: 4px;left: 57px;border: 1px solid #ed4242;}
+.find-btn>i{display: block;width: 22px;height: 22px; background: url(images/ico_mui1.png) no-repeat 0 -12px;margin-left: 14px;margin-left: 7px;margin-top: -4px}
+
+.logo .shopping-car{display:inline-block;background:#ed4242 ; width: 106px;height: 42px;position: relative;top: 7px;left: 84px; font-size: 16px;color: #FFFFFF;padding-left:14px ;}
+.logo a:hover{text-decoration: none;}
+.shopping-car .icon-car{display:inline-block;width: 16px;height: 13px;background: url(images/ico-index.png) no-repeat 0 -60px;}
+.shopping-car .num {font-size: 12px;padding: 4px;}
+.shopping-car >div{margin-top: -7px;margin-left: 5px;}
+
+/*leader*/
+.out-leader{width: 100%;height:42px ;background:#1e1e1e ;margin-top: -8px;}
+.leader li{float: left;}
+.leader li a{font-size: 14px;color: #fff;line-height: 42px;padding: 0 35px;}
+.leader .allgoods{background: #ed4242 ;     margin-left: -22px;}
+.icon-angle-down.down { margin-left: -28px;}  
+.leader img{ position: relative;top: -20px;left: -44px;}
+.hover{background:dimgrey}
+.leader a:hover{text-decoration: none;}
+
+/*foot*/
+.out-foot{width: 100%;color: #999;/*margin-top: 40px;*/ height: 160px;background: #eee; border-top: 1px solid #ddd;font-size: 12px;}
+.foot div{float: left;}
+.foot li{padding-top: 15px;line-height:11px;}
+.foot .fa{padding-right: 4px;}
+.foot li a{color: #333333;padding-right: 20px;}
+.foot li a:hover{color: red;text-decoration: none;}
+.foot .ce-1{padding-left: 120px;}
+.foot .code{position: relative; z-index: 3;width: 160px;padding-top: 15px; height: 145px;text-align: center;color: #ddd; background: #e65050; float: right;}
+.code img{width: 114px;height: 118px;margin-bottom: 4px;}

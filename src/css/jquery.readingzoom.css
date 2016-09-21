@@ -3,4 +3,4 @@
 
 /*大图*/
 .lxbzoom{position: absolute;width:460px;height:460px;overflow:hidden; border: 1px solid #ddd;}
-.lxbzoom img{position: absolute;left:0;right:0; }
+.lxbzoom div{position: absolute;left:0;right:0; }

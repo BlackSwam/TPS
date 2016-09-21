@@ -5,7 +5,6 @@
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="../css/reset.css">
 	<link rel="stylesheet" type="text/css" href='../assets/awesome/css_piugin/font-awesome.min.css'>
-	<link rel="stylesheet" type="text/css" href='../assets/bootstrap/css/bootstrap.css' />
 	<link rel="stylesheet" type="text/css" href="../css/jquery.readingzoom.css"/>
 	<link rel="stylesheet" type="text/css" href="../css/detailgood.css"/>
 	<script src="../assets/jquery-1.12.0.js"></script>
@@ -18,6 +17,18 @@
 <body>
 <div class="out-content">
 	<div class="detail-content">
+		<div class="scroll-top">
+			<i></i>
+		</div>
+		<ul class="w1200 s-h  ">
+			<dl>
+				<dt><img src="../css/images/goods/57d906bb342a6_main.jpg"></dt>
+				<dd>费雪Fisher-Price猴公仔 毛绒<span>￥88.91</span></dd>
+			</dl>
+		  <li class="on"><i class=" icon-sort-up" style="color:#ed4242 ;"></i>商品介绍</li>
+		  <li><i class=" icon-sort-up icon-hide " style="color:#ed4242 ; width: 14px; height: 14px;"></i>商品评价</li>
+		  <a class="in-car" href="#"><i id="shopping-cart"></i>加入购物车</a>
+		</ul>
 		<div class="detail-goods">
 	 		<div class="right-top">
 				<div class="d-img">
@@ -51,16 +62,30 @@
 		    	<span class="code-num">25542856-1</span>
 		    	<span class="comefrom">原产地: 中国</span>
 		    </p>
-		    
+			<p class="goods-price">
+				价格:
+				<span>￥88.92</span>
+			</p>
+			<div class="add-goods">
+				数量:
+				<span >1</span>
+				<span class="td">
+					<i class="icon-angle-up"></i>
+				</span>
+				<span class="dx">
+					<i class="icon-angle-down"></i>
+				</span>
+				<p class="sv-goods">库存:1446</p>
+			</div>
 	
-	    	<p class="">发货地: <span>昆明市</span></p>
-	  <div class="">
-	      <span class="">
-	        <a class="" href="#">立即购买</a>
-	        <a class="" href="#"><i></i>加入购物车</a>   
+	    	<p class="from">发货地: <span>昆明市</span></p>
+	  <div class="buy-in">
+	
+	        <a class="buy" href="#">立即购买</a>
+	        <a class="in-car" href="#"><i id="shopping-cart"></i>加入购物车</a>   
 	                         
-	      </span>
-	      <a  class="" href="#"><i class=""></i>添加关注(<span class="">1</span>)</a>
+
+	      <a  class="add-forcus" href="#"><i class="icon-star-empty"></i>添加关注(1)</a>
 		
 		<!--弹窗-->
 	      <!--<div class="js-confirm tjia shux clear">
@@ -82,21 +107,22 @@
 
 	 </div>
 		
-	<!--<div class="w1200 goods-menu">
-	<ul>
-	  <li class="on"></s>商品介绍</li>
-	  <li>商品评价</li>
-	</ul>
-	<div class="list">
-	  <h3>全部分类</h3>
+	<div class=" goods-menu clearfix">
+		<ul class="w1200 q-h">
+		  <li class="on"><i class=" icon-sort-up" style="color:#ed4242 ;"></i>商品介绍</li>
+		  <li><i class=" icon-sort-up icon-hide " style="color:#ed4242 ; width: 14px; height: 14px;"></i>商品评价</li>
+		</ul>
+
+	<div class="left-list ">
+	  <h5 id='first'>全部分类</h5>
 	  <ul>
 	    <li>
-	      <a href="https://www.tps138.com/index/category?sn=K0JpROsUQY" class="b-t ellipsis" title="服饰箱包" target="_blank">服饰箱包</a>
+	      <a href="https://www.tps138.com/index/category?sn=K0JpROsUQY" class="b-t ellipsis" title="服饰箱包" target="_blank"><h5>服饰箱包</h5></a>
 	      <a class="ellipsis" href="https://www.tps138.com/index/category?sn=VuRmWVnI7L" target="_blank" title="箱包">箱包</a>
 	    </li>
 	    
 	    <li>
-	      	<a href="https://www.tps138.com/index/category?sn=u9f0KhcZci" class="b-t ellipsis" title="母婴用品" target="_blank">母婴用品</a>
+	      	<a href="https://www.tps138.com/index/category?sn=u9f0KhcZci" class="b-t ellipsis" title="母婴用品" target="_blank"><h5>母婴用品</h5></a>
 	        <a class="ellipsis" href="https://www.tps138.com/index/category?sn=LaiaZBMFLx" target="_blank" title="婴幼儿奶粉">婴幼儿奶粉</a>
 	        <a class="ellipsis" href="https://www.tps138.com/index/category?sn=5sSCJR0jVf" target="_blank" title="成人奶粉">成人奶粉</a>
 	        <a class="ellipsis" href="https://www.tps138.com/index/category?sn=Wcyie3WTlk" target="_blank" title="喂养洗护用品">喂养洗护用品</a>
@@ -107,7 +133,7 @@
 	     </li>
 	    
 	    <li>
-	     	<a href="https://www.tps138.com/index/category?sn=VjCumOUrIi" class="b-t ellipsis" title="美妆个护" target="_blank">美妆个护</a>
+	     	<a href="https://www.tps138.com/index/category?sn=VjCumOUrIi" class="b-t ellipsis" title="美妆个护" target="_blank"><h5>美妆个护</h5></a>
 	        <a class="ellipsis" href="https://www.tps138.com/index/category?sn=H9mfh6mRdI" target="_blank" title="洗发护发">洗发护发</a>
 	        <a class="ellipsis" href="https://www.tps138.com/index/category?sn=dkorGpTZZy" target="_blank" title="魅力彩妆">魅力彩妆</a>
 	        <a class="ellipsis" href="https://www.tps138.com/index/category?sn=9kpfYJd0CV" target="_blank" title="面部护理">面部护理</a>
@@ -118,18 +144,18 @@
 	      </li>
 	   
 	    <li>
-	     	<a href="https://www.tps138.com/index/category?sn=mWKI6osgkg" class="b-t ellipsis" title="汽车用品" target="_blank">汽车用品</a>
+	     	<a href="https://www.tps138.com/index/category?sn=mWKI6osgkg" class="b-t ellipsis" title="汽车用品" target="_blank"><h5>汽车用品</h5></a>
 	        <a class="ellipsis" href="https://www.tps138.com/index/category?sn=P6PgilDjlG" target="_blank" title="车载电器">车载电器</a>
 	        <a class="ellipsis" href="https://www.tps138.com/index/category?sn=e2PCnd0LZ8" target="_blank" title="汽车装饰">汽车装饰</a>
 	      </li>
 	   
 	    <li>
-	       <a href="https://www.tps138.com/index/category?sn=AcrsRgyBJo" class="b-t ellipsis" title="体育户外用品" target="_blank">体育户外用品</a>
+	       <a href="https://www.tps138.com/index/category?sn=AcrsRgyBJo" class="b-t ellipsis" title="体育户外用品" target="_blank"><h5>体育户外用品</h5></a>
 	       <a class="ellipsis" href="https://www.tps138.com/index/category?sn=cKKhCFMJCK" target="_blank" title="户外装备">户外装备</a>
 	    </li>
 	   
 	    <li>
-	      	<a href="https://www.tps138.com/index/category?sn=MRUya5BVJ5" class="b-t ellipsis" title="营养保健" target="_blank">营养保健</a>
+	      	<a href="https://www.tps138.com/index/category?sn=MRUya5BVJ5" class="b-t ellipsis" title="营养保健" target="_blank"><h5>营养保健</h5></a>
 	        <a class="ellipsis" href="https://www.tps138.com/index/category?sn=VPNTjyPT66" target="_blank" title="家庭保健">家庭保健</a>
 	        <a class="ellipsis" href="https://www.tps138.com/index/category?sn=xHISm5o2sp" target="_blank" title="成人用品">成人用品</a>
 	        <a class="ellipsis" href="https://www.tps138.com/index/category?sn=6AdkTBXXmA" target="_blank" title="保健食品">保健食品</a>
@@ -139,7 +165,7 @@
 	     </li>
 	   
 	    <li>
-	      	<a href="https://www.tps138.com/index/category?sn=AotyTAhdbv" class="b-t ellipsis" title="食品、酒水" target="_blank">食品、酒水</a>
+	      	<a href="https://www.tps138.com/index/category?sn=AotyTAhdbv" class="b-t ellipsis" title="食品、酒水" target="_blank"><h5>食品、酒水</h5></a>
 	        <a class="ellipsis" href="https://www.tps138.com/index/category?sn=g43YDvtV8G" target="_blank" title="进口食品">进口食品</a>
 	        <a class="ellipsis" href="https://www.tps138.com/index/category?sn=mAtUTksTSU" target="_blank" title="粮油调味">粮油调味</a>
 	        <a class="ellipsis" href="https://www.tps138.com/index/category?sn=rFVPKelt3q" target="_blank" title="中外名酒">中外名酒</a>
@@ -149,7 +175,7 @@
 	      </li>
 	   
 	    <li>
-	      	<a href="https://www.tps138.com/index/category?sn=zhJoOMFhRV" class="b-t ellipsis" title="家居日用" target="_blank">家居日用</a>
+	      	<a href="https://www.tps138.com/index/category?sn=zhJoOMFhRV" class="b-t ellipsis" title="家居日用" target="_blank"><h5>家居日用</h5></a>
 	        <a class="ellipsis" href="https://www.tps138.com/index/category?sn=Q0bAi1GKGY" target="_blank" title="厨具">厨具</a>
 	        <a class="ellipsis" href="https://www.tps138.com/index/category?sn=CxFp8RavcO" target="_blank" title="清洁用品">清洁用品</a>
 	        <a class="ellipsis" href="https://www.tps138.com/index/category?sn=gOHqmhDhyY" target="_blank" title="精美餐具">精美餐具</a>
@@ -161,7 +187,7 @@
 	      </li>
 	
 	    <li>
-	      <a href="https://www.tps138.com/index/category?sn=dc8hfvl17J" class="b-t ellipsis" title="钟表首饰" target="_blank">钟表首饰</a>
+	      <a href="https://www.tps138.com/index/category?sn=dc8hfvl17J" class="b-t ellipsis" title="钟表首饰" target="_blank"><h5>钟表首饰</h5></a>
 	        <a class="ellipsis" href="https://www.tps138.com/index/category?sn=F9PpKGJwx6" target="_blank" title="手表">手表</a>
 	        <a class="ellipsis" href="https://www.tps138.com/index/category?sn=UVmgy2aV5W" target="_blank" title="耳环类">耳环类</a>
 	        <a class="ellipsis" href="https://www.tps138.com/index/category?sn=cAU1iev04N" target="_blank" title="项链类">项链类</a>
@@ -171,17 +197,116 @@
 	      </li>
 	    
 	    <li>
-	      <a href="https://www.tps138.com/index/category?sn=wk1BC6QKrZ" class="b-t ellipsis" title="数码电子" target="_blank">数码电子</a>
+	      <a href="https://www.tps138.com/index/category?sn=wk1BC6QKrZ" class="b-t ellipsis" title="数码电子" target="_blank"><h5>数码电子</h5></a>
 	    <a class="ellipsis" href="https://www.tps138.com/index/category?sn=xAbfMGn0Yi" target="_blank" title="智能设备">智能设备</a>
 	    <a class="ellipsis" href="https://www.tps138.com/index/category?sn=DWrdcVaMOb" target="_blank" title="耳机">耳机</a>
 	    <a class="ellipsis" href="https://www.tps138.com/index/category?sn=NeZwvzBnDS" target="_blank" title="电脑">电脑</a>
 	    <a class="ellipsis" href="https://www.tps138.com/index/category?sn=owlGBH5nYp" target="_blank" title="手机配件">手机配件</a>
 	  </li>
-	    
-	 </ul>
-	</div>  -->
-</div>
-
+	  </ul>
+	</div>    
+ 
+	<div class="list-img ">
+		<div id="sm">
+			<img src="../image/detail-goods/57d9070085953_desc.jpg">
+			<img src="../image/detail-goods/57d9070085aa8_desc (1).jpg" />
+			<img src="../image/detail-goods/57d9070085bb3_desc.jpg">
+			<img src="../image/detail-goods/57d9070085cb7_desc.jpg">
+			<img src="../image/detail-goods/57d9070085e94_desc.jpg">
+			<img src="../image/detail-goods/57d9070085f9b_desc.jpg" />
+			<img src="../image/detail-goods/57d90700883b5_desc.jpg" />
+			<img src="../image/detail-goods/57d90700886ab_desc.jpg">
+		</div>
+		<div id="xm">
+			<div class="grade">
+				<h4>综合评分</h4>
+				<p>
+					<i class="icon-star" style="color: #f16d22;"></i>
+					<i class="icon-star" style="color: #f16d22;"></i>
+					<i class="icon-star" style="color: #f16d22;"></i>
+					<i class="icon-star" style="color: #f16d22;"></i>
+					<i class="icon-star" style="color: #f16d22;"></i>			
+					<span>5.0</span> 
+					<span>(0评论)</span>
+				</p>
+			</div>
+			 <div id="g-num">
+				<ul>
+					<li>评论者</li>
+					<li>评论时间</li>
+					<li>顾客满意度</li>
+				</ul>
+				
+					<span>0评论</span>
+			</div>  
+		</div>
+	</div>
+	
+	<div class="right-list">
+		<h5 id='first'>热销推荐</h5>
+		<ul class="listgoods">
+			<li class=" right-magin top-magin">
+					<img src="../css/images/goods/57abd835255fe_main.jpg"> 
+					<a target="_blank" title="巧曼浴巾2条装  纯棉加厚浴巾70CM*140CM   颜色随机发货 全国包邮" href="https://www.tps138.com/index/product?snm=10688795">
+						巧曼浴巾2条装  纯棉加厚浴巾70CM*140CM   颜色随机发货 全国包邮
+					</a>
+					<span class="price">
+						￥98.19
+					</span>
+				</li>
+			
+				<li class=" right-magin top-magin">
+					<img src="../css/images/goods/57c7f56922870_main.jpg"> 
+	
+					<a target="_blank" title="巧曼浴巾2条装  纯棉加厚浴巾70CM*140CM   颜色随机发货 全国包邮" href="https://www.tps138.com/index/product?snm=10688795">
+						巧曼浴巾2条装  纯棉加厚浴巾70CM*140CM   颜色随机发货 全国包邮
+					</a>
+					<span class="price">
+						￥98.19
+					</span>
+				</li>
 		
+				<li class="top-magin">
+					<img src="../css/images/goods/57d2631ea3f1e_main.jpg">
+					<a target="_blank" title="巧曼浴巾2条装  纯棉加厚浴巾70CM*140CM   颜色随机发货 全国包邮" href="https://www.tps138.com/index/product?snm=10688795">
+						巧曼浴巾2条装  纯棉加厚浴巾70CM*140CM   颜色随机发货 全国包邮
+					</a>
+					<span class="price">
+						￥98.19
+					</span>
+				</li>
+				<li class=" right-magin top-magin">
+					<img src="../css/images/goods/57abd835255fe_main.jpg"> 
+					<a target="_blank" title="巧曼浴巾2条装  纯棉加厚浴巾70CM*140CM   颜色随机发货 全国包邮" href="https://www.tps138.com/index/product?snm=10688795">
+						巧曼浴巾2条装  纯棉加厚浴巾70CM*140CM   颜色随机发货 全国包邮
+					</a>
+					<span class="price">
+						￥98.19
+					</span>
+				</li>
+			
+				<li class=" right-magin top-magin">
+					<img src="../css/images/goods/57c7f56922870_main.jpg"> 
+	
+					<a target="_blank" title="巧曼浴巾2条装  纯棉加厚浴巾70CM*140CM   颜色随机发货 全国包邮" href="https://www.tps138.com/index/product?snm=10688795">
+						巧曼浴巾2条装  纯棉加厚浴巾70CM*140CM   颜色随机发货 全国包邮
+					</a>
+					<span class="price">
+						￥98.19
+					</span>
+				</li>
+		
+				<li class="top-magin">
+					<img src="../css/images/goods/57d2631ea3f1e_main.jpg">
+					<a target="_blank" title="巧曼浴巾2条装  纯棉加厚浴巾70CM*140CM   颜色随机发货 全国包邮" href="https://www.tps138.com/index/product?snm=10688795">
+						巧曼浴巾2条装  纯棉加厚浴巾70CM*140CM   颜色随机发货 全国包邮
+					</a>
+					<span class="price">
+						￥98.19
+					</span>
+				</li>
+			</ul>
+	</div>
+	</div>	
 </body>
 </html>

@@ -1,8 +1,8 @@
 .top,.logo,.leader,.foot{width: 1198px; margin: 0 auto;}
 /*top*/
-.out-top{width: 100%; background: #eeeeee;height:36px;}
+.out-top{width: 100%; background: #eeeeee;height:36px;border-bottom: 1px solid #e2e2e2;}
 .top li{cursor: pointer;}
-.top{position:absolute;height:36px;background: #eeeeee; border-bottom: 1px solid #e2e2e2;color: #333;font-size: 12px;margin: 0 32px;}
+.top{position:absolute;height:36px;background: #eeeeee; color: #333;font-size: 12px;margin: 0 32px;}
 .top .left li{float:left; width: 80px; height:36px;margin: 0 5px; text-align: center;}
 .left1 .qizhi{background: url(images/ico-index.png) no-repeat 0 -12px;height: 11px;display: block;margin-top: 13px;}
 .left1{padding-left:10px; width: 70px;}

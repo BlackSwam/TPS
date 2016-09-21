@@ -1,8 +1,12 @@
 .out-content{width: 100%;background: #f5f5f5;}
-.detail-content{margin: 0 auto;width: 1200px;min-height: 700px;}
+.detail-content{margin: 0 auto;width: 1200px;min-height: 656px;overflow: hidden;}
 .detail-goods{height: 550px;background: #FFF;width: 1200px;position: relative; top: 56px;}
 .right-top,.left-top{float: left;}
 .right-top{width: 460px;margin: 10px; }
+
+.scroll-top{width: 51px; height: 51px;background: #888888;border-radius:10px;position: fixed;right: 34px;bottom: 20px;display: none;}
+.scroll-top i{display: block;width: 29px;height: 29px;background: url(images/ico_mui.png) no-repeat -180px -60px;    position: relative;top: 8px;left: 10px}
+.hrr{background: #e65050;}
 
 .d-img{width: 460px;height: 460px;border: 1px solid #ddd;overflow: hidden;}
 .d-img span{display: block;position: relative;}
@@ -15,4 +19,58 @@
 .left-top h3{margin-top: -17px;width: 630px;}
 .left-top .shop-num{color: #616161;font-size: 14px;line-height: 2;}
 .left-top .comefrom{color: #999999;  margin-left: 136px;}
+.left-top .goods-price{color: #999;font-size: 14px;}
+.goods-price span{font-weight: 700;color: #ed4242;font-size: 32px;    position: relative;top: 19px;left: 33px;}
+.add-goods{margin-top: 48px;}
+.add-goods span{ display: inline-block;border: 1px solid #999;width: 51px; height: 31px;text-align: center;margin-left: 38px;line-height: 31px;}
+.add-goods .td,.add-goods .dx{display: block; width: 22px;height: 14px;line-height: 14px;margin-left: 0px;position: relative;top: -32px;left: 135px;}
+.add-goods .sv-goods {position: relative;top: -61px;width: 455px;left: 262px;color: #999999;}
+.add-goods .from{margin-top: -14px;}
 
+.buy-in{padding: 8px 0 0 48px;}
+.buy-in .buy,.in-car{display: inline-block; width: 147px;height: 43px;border: 1px solid;text-align: center; line-height: 43px;margin-right: 10px;}
+.buy-in .buy{ background: #ffebeb;border: 1px solid #ed4242;color: #ff6600;}
+.in-car{background: #ed4242;border: 1px solid #ed4242;color: #fff;}
+.add-forcus{color: #000000;}
+#shopping-cart{display: inline-block;width: 16px;height: 13px;background: url(images/ico-index.png) no-repeat 0 -61px;margin-right: 5px;}
+
+.goods-menu{width: 1200px;margin: 0 auto;overflow: hidden;}
+.w1200  { width: 1200px;height: 40px;line-height: 40px; border-bottom: 2px solid #ed4242; margin: 0px;text-align: center;}
+.w1200 li{cursor:pointer;display: inline-block; margin-right:120px ;font-size: 18px;width: 86px;}
+.w1200 li.on{color:#ed4242 ;}
+.w1200 .icon-sort-up{position: relative;top: 26px;left: 43px;width: 14px;height: 14px;}
+.w1200 .icon-hide{display: none;}
+
+.s-h{height: 40px;padding-top: 15px;background: rgba(255,255,255,5);display: none;position: fixed;top:0; left:31.5px;}
+.s-h dl{width: 224px;height: 40px;}
+.s-h dt{width: 40px;height: 40px;float: left;}
+.s-h dd{float: left;color: #757575;font-size:12px ;width: 153px;}
+.s-h li{position: relative;top: -62px; left: 55px;}
+.s-h a{position: relative;top: -65px;left: 310px; height: 39px;}
+
+.left-list,.list-img,.right-list{float: left;}
+.left-list{background: #FFFFFF;width: 182px;text-align: center;height: 1910px;}
+.left-list ul{margin:0 0 0 2px;width: 175px;}
+#first{border-bottom: 1px solid #DDDDDD;width: 175px;padding: 15px 0;}
+.left-list ul li{border-bottom: 1px solid #DDDDDD;width: 175px;}
+.left-list a{color: #000000;display: block;height: 30px;}
+.left-list li a:hover{text-decoration: none;color: #ed4242;}
+.left-list a h3{color: #000000;margin:0 0 0 2px;}
+.list-img{width:800px;min-height: 3000px; margin-bottom: 20px;}
+.list-img #sm{width:800px;background: #FFFFFF;padding-top: 10px;margin-left: 9px;}
+.list-img img{display: block;}
+
+#xm{width:800px;margin-left: 9px;display: none;}
+#xm .grade{width: 760px;background: #FFFFFF;height: 87px;padding: 30px 20px;}
+
+#g-num ul{margin:0;height:50px;width: 800px;border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;background: #f9f9f9;} 
+#g-num ul li{float: left;margin:15px 0 0 90px;font-weight: 500;font-size: 1.2em;}
+#g-num span{display: block;width: 800px;height: 40px;text-align: center;line-height: 40px;color: #fff;background: #adadad}
+
+.right-list{background: #FFFFFF; width: 199px;margin-left: 18px;text-align: center;}
+.right-list h5{margin-left: 10px;}
+.right-list ul{width: 199px;}
+.right-list ul li{border-bottom: 1px solid #DDDDDD;width: 175px;}
+.listgoods li a{font-size: 12px;color: #333; display: inline-block; width: 175px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.listgoods li a:hover{text-decoration: none;color: #ee4242;}
+.listgoods .price{color: #ee4242;}

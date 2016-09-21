@@ -70,8 +70,8 @@
 
 
 				// 定位大图
-				var bigPos = {left:oLeft*ratio,top:oTop*ratio};
-
+				var bigPos = {left:minPos.left*ratio,top:minPos.top*ratio};
+				
 				// 判断大图到底后不再移动
 				if(bigPos.top >= $bigPic.outerHeight()-$bigWrap.outerHeight()){
 					bigPos.top = $bigPic.outerHeight()-$bigWrap.outerHeight()
@@ -92,7 +92,12 @@
 			
 			function init(src){
 				// 生成html结构
-				$bigPic = $('<img/>').attr('src',src);
+				$bigPic = $('<div/>').css({
+					'width':800,
+					'height':800,
+					"background-image":"url("+src+")"
+				})
+					
 				$bigWrap = $('<div/>').addClass('lxbzoom').append($bigPic).appendTo('body');
 
 				if(opt.position == 'right'){
@@ -111,6 +116,7 @@
 
 				// $bigPic.load(function(){
 					ratio = $bigPic.outerWidth()/$smallPic.outerWidth();
+//					console.log($bigPic.outerWidth())
 				// })
 			}
 

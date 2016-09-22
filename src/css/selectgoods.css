@@ -1,9 +1,12 @@
 .out-content,.out-fff{width: 100%; }
 .in-fff,.lazyload{width: 1200px;margin: 0 auto;}
+.scroll-top{width: 51px; height: 51px;background: #888888;border-radius:10px;position: fixed;right: 34px;bottom: 20px;display: none;}
+.scroll-top i{display: block;width: 29px;height: 29px;background: url(images/ico_mui.png) no-repeat -180px -60px;    position: relative;top: 8px;left: 10px}
+.hrr{background: #e65050;}
 
 .out-content{min-height: 700px;background:#f5f5f5;}
 .banner{width: 100%; height: 450px;}
-.banner img{width: 1263px; height: 450px;}
+.banner img{width: 100%; height: 450px;}
 
 .out-fff{height: 53px; background: #fff;}
 .in-fff{height: 53px;}
@@ -17,3 +20,20 @@
 
 .new{width:1200px; border-bottom: 1px solid #ddd;padding-top: 20px;}
 .new h3{float: left;border-left: solid 3px #ed4242;padding-left: 21px}
+
+/*json请求回来的数据样式*/
+.nwgoods{width: 1200px; padding-top: 14px;overflow: hidden;}
+.listgoods{margin: 0;width:1200px}
+.listgoods li{width: 232px;height: 300px;background: #FFFFFF;float: left;margin: 5px 3px ;}
+
+.nwgoods li a{font-size: 12px;color: #333; display: inline-block; width: 175px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; position: relative; top: -83px;left: 5px}
+.nwgoods li a:hover{text-decoration: none;color: #ee4242;}
+
+
+.gift,.car{width: 25px;height: 25px;}
+.gift{display:block;position: relative; top: -224px; left: 196px}
+.car{display:block;position: relative;top: -218px;left: 196px}
+.CN{display:block;width: 16px;height: 10px;background: url(images/ico-index-flag.png) no-repeat 0 -11px; margin-left: 3px;}
+.country{position: relative; top: -47px;left: 196px;text-indent: -8px; color: #bbb;}
+.price{color: #ee4242;position: relative;top: -59px;left: -175px;}
+.hot-goods{padding-top: 15px;}

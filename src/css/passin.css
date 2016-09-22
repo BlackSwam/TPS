@@ -2,17 +2,21 @@
 .insid-pass{width: 1200px;height: 640px;padding-top: 40px;margin: 0 auto;}
 .pass-top{width: 1200px;height: 40px;border-bottom:solid 2px #888 ;line-height: 40px;}
 
+form label{color: red; }
+
 .dl .txt, .zc .txt{display: block;width: 246px;height: 40px;text-indent: 43px;line-height: 40px;}
 .dl,.zc{float: left;}
+
 .txt1,.txt2{display:inline-block;width: 18px;height: 14px;background: url(images/ico_mui.png) no-repeat -76px -91px;}
-.txt1,.txt2,.pass1,.pass2,.pass3{position: relative; top: 37px;left: 20px;} 
+.txt3{display:inline-block;width: 14px;height: 14px;background:  url(images/ico_mui.png) no-repeat -128px 0;}
+.txt3,.txt1,.txt2,.pass1,.pass2,.pass3{position: relative; top: 37px;left: 20px;} 
 .pass1,.pass2,.pass3{display:inline-block;width: 18px;height: 20px;background: url(images/ico_mui.png) no-repeat -102px -90px;}
 .dl{width: 540px;height: 321px;padding: 20px 0 0 60px;margin-top: 20px;}
 
 .dl .for-in{width:87px;text-align: center; height:37px; line-height:37px;background: #d22215; border: none; color: #fff;font-weight: 600;cursor: pointer;font-size: 14px;font-family: '\5b8b\4f53';    margin-top: 28px;}
 .dl a { position: relative;top: 96px;left: -88px;font-size: 12px;}
 
-.zc{width: 539px;height: 469px;padding: 20px 0 0 60px;margin-top: 20px;border-left:solid 1px gray ;}
+.zc{width: 539px;height: 584px;padding: 20px 0 0 60px;margin: 20px 0;border-left:solid 1px gray ;}
 .zc .getnum{background: #666; border: solid 1px #ccc; font-weight: 600;font-size: 14px;cursor: pointer;width: 113px;text-align: center;height: 37px;line-height: 37px;color: #FFFFFF;margin-top: 30px;}
 .zc .now{ width: 134px;font-size: 14px;height: 41px; color: #fff; background: #303f5c;font-weight: 600;position: relative;top: 28px;border: none;}
 .zc .check{ margin-top: 13px;font-size: 12px;}

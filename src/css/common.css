@@ -38,7 +38,7 @@
 .out-leader{width: 100%;height:42px ;background:#1e1e1e ;margin-top: -8px;}
 .leader li{float: left;}
 .leader li a{font-size: 14px;color: #fff;line-height: 42px;padding: 0 35px;}
-.leader .allgoods{background: #ed4242 ;     margin-left: -22px;}
+.leader .allgoods{background: #ed4242 ;     margin-left: -22px;width: 164px;}
 .icon-angle-down.down { margin-left: -28px;}  
 .leader img{ position: relative;top: -20px;left: -44px;}
 .hover{background:dimgrey}

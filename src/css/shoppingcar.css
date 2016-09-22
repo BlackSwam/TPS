@@ -1,7 +1,7 @@
 .out-content{width: 100%;background: #f5f5f5;min-height: 560px;}
 .out-content .shop{min-height: 560px;margin: 0 auto;width: 1200px;}
 .shop-top{height: 31px;width: 1200px; font-size: 1.3em; color: #444; font-size: 1.3em;color: #444;padding-top: 40px;}
-.shop-top i{display: inline-block;width:14px;height:24px;background: url(images/ico_mui.png) no-repeat -150px 0;}
+#din{border:none;display: inline-block;width:14px;height:24px;background: url(images/ico_mui.png) no-repeat -150px 0;}
 .shop-top span{width:28px;height: 23px;display:inline-block; border: 1px solid #e4393c; border-left: none;color: #e4393c;line-height: 24px;}
 .shop-top p{font-weight: 700;margin-right: 4px;margin-top: 4px;}
 .shop-top i, .shop-top span,.shop-top p{float: left;} 
@@ -18,3 +18,19 @@
 .goods .clear{ padding-left: 970px;padding-top: 29px; font-size: 12px;}
 .goods .money-num{color:  #ff2f00;font-size: 1.2em;font-weight: 700;    padding-left: 1096px;}
 .goods .btn1{width: 132px;height: 40px;background: #999;text-align: center;line-height: 40px;    margin-left: 1000px;}
+
+
+#addgoods{width: 1178px;padding: 10px;margin: 0;background: #fff;}
+#addgoods li{width: 1168px;height: 75px;margin: 5px;}
+#addgoods li div{width: 68px;height: 68px;margin-right: 10px;}
+#addgoods li div img{width: 68px;height: 68px;}
+#addgoods li div,#addgoods li a{float: left;}
+#addgoods li a{width: 258px;color: #000000;}
+#addgoods li a:hover{text-decoration: none;color: #DD1144;}
+#addgoods li span,#addgoods li b,.delect{float: right;}
+.singleprice{font-size: 1.2em;margin-right: 80px;}
+.allprice{font-size: 1.2em; color: #DD1144;margin-right: 63px;}
+.right-b,.left-b{display:inline-block;width: 27px;height: 27px;background: #d9d9d9;text-align: center;line-height: 27px;}
+.middle-xx{width: 36px;height: 25px;text-align:center;line-height:25px;border: 1px solid #000000;}
+.left-b{margin-right: 70px;}
+.delect{display: inline-block;width: 11px;height: 14px; background:url(images/ico_mui.png) no-repeat -130px -96px;margin-right: 50px;}

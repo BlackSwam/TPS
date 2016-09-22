@@ -8,8 +8,11 @@
 	<link rel="stylesheet" type="text/css" href='../assets/bootstrap/css/bootstrap.css' />
 	<link rel="stylesheet" type="text/css" href="../css/passin.css"/>
 	<script src="../assets/jquery-1.12.0.js"></script>
+	<script src="../assets/jquery/js_piugin/jquery.validate.js"></script>
+	<script src="../assets/jquery/jquery_font/jquery.validate.messages_zh.js"></script>
 	<script src="../assets/bootstrap/js/bootstrap.js"></script>
 	<script src="../js/link.js"></script>
+	<script src="../js/passin.js"></script>
 </head>
 <body>
 
@@ -19,30 +22,34 @@
 <div class="insid-pass">
 	<h3 class="pass-top">登录 | 顾客注册</h3>
 	<div class="dl">
-		<form>
+		<form >
 			<h4>登录</h4>
-			<i class="txt1"></i>
-			<input type="text" placeholder="邮箱/ID/手机号" class="txt" />
+			<i class="txt3"></i>
+			<input type="text" placeholder="手机号" class="txt" name="tel" />
+			
 			<i class="pass1"></i>
-			<input type="text" placeholder="密码" class="txt" />
+			<input type="password" placeholder="密码" class="txt" name="password" />
 			<input type="button" value="登录" class="for-in"/>
 			<a href="#">忘记密码？</a>
 		</form>
 	</div>
 	<div class="zc">
-		<form>
+		<form >
 			<h4>顾客注册</h4>
+			<i class="txt3"></i>
+			<input type="text" placeholder="手机号" class="txt" name="tel1" />
 			<i class="txt2"></i>
-			<input type="text" placeholder="电子邮箱/手机号" class="txt" />
+			<input type="text" placeholder="电子邮箱" class="txt" name="email" />
 			<i class="pass2"></i>
-			<input type="text" placeholder="密码"  class="txt"/>
+			<input type="text" placeholder="密码"  class="txt" name="password1"/>
 			<i class="pass3"></i>
-			<input type="text" placeholder="验证码" class="txt"/>
+			<input type="text" placeholder="验证码" class="txt" name="test" />
 			<input type="button" value="获取验证码"  class="getnum"/>
+			
 			<div class="check">
 				<input type="checkbox" checked="checked" />我同意<a href="#">《TPS用户注册协议》</a>
 			</div>
-			<input type="button" value="马上注册" class="now" />
+			<input type="submit" value="马上注册" class="now" />
 		</form>
 	</div>
 </div>

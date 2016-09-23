@@ -35,14 +35,17 @@
 .shopping-car >div{margin-top: -7px;margin-left: 5px;}
 
 /*leader*/
-.out-leader{width: 100%;height:42px ;background:#1e1e1e ;margin-top: -8px;}
-.leader li{float: left;}
-.leader li a{font-size: 14px;color: #fff;line-height: 42px;padding: 0 35px;}
+.out-leader{width: 100%;height:42px ;background:#1e1e1e ;margin-top: -8px;overflow: ;}
+.leader-ul{height: 42px;margin-bottom: 0;}
+.leader-ul li{float: left;}
+.leader-ul li a{font-size: 14px;color: #fff;line-height: 42px;padding: 0 35px;}
 .leader .allgoods{background: #ed4242 ;     margin-left: -22px;width: 164px;}
 .icon-angle-down.down { margin-left: -28px;}  
-.leader img{ position: relative;top: -20px;left: -44px;}
+.leader-ul img{ position: relative; top: -20px;left: -44px;}
 .hover{background:dimgrey}
 .leader a:hover{text-decoration: none;}
+
+
 
 /*foot*/
 .out-foot{width: 100%;color: #999;/*margin-top: 40px;*/ height: 160px;background: #eee; border-top: 1px solid #ddd;font-size: 12px;}

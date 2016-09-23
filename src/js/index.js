@@ -17,52 +17,50 @@ jQuery(function($){
 	})
 	
 	//轮播图
-	var index=0;
-	
-	var timer;
 
-	$('.banner').on('mouseenter',function(){
-		clearInterval(timer);
-		$('.banner .list-dota,.banner .right-btn,.banner .left-btn').show();
-
+	scroll('.banner','#scroll');
+	scroll('.goods-scroll','#baby');
+	scroll('.g-scroll','#beautiful');
+	scroll('.g1-scroll','#food');
+	scroll('.g2-scroll','#clock');
+	scroll('.g3-scroll','#health');
 	
-	}).on('mouseleave',function(){
-		$('.banner .list-dota,.banner .right-btn,.banner .left-btn').hide();
-		timer = setInterval(function(){
+	
+	
+	//下拉菜单
+	$('.allgoods').on('mouseover',function(){
+		$('#menu').show();
 		
-			index++;
-			showPic();
-		},3000);
-	}).trigger('mouseleave')
-	
-			//上一张
-	$('.banner .right-btn').on('click',function(){
-					index--;
-					showPic();
-					console.log(1)
+	$('#menu').on('mouseover','li',function(){
+		$(this).find('p').stop().animate({"padding-left":"20px"})
+		
+		var idx=$(this).index();
+		$('.second').eq(idx).show().siblings().hide();
+		
+	}).on('mouseout','li',function(){
+		$(this).siblings().find('p').stop().animate({"padding-left":"0px"})
 	})
 	
-		// 下一张
-	$('.banner .left-btn').on('click',function(){
-		index++;
-		showPic();
+//	$('.second').on('mouseover',function(){
+//		var idx=$(this).index();
+//		$('#menu li p').eq(idx).siblings().stop().animate({"padding-left":"20px"})
+//	})
+	
+	
+	//购物车数量
+	var str = getCookie("arr");
+	
+	var arr =JSON.parse(str);
+	
+	$('.num').text(arr.length);
+	}).on('mouseout',function(){
+		
 	})
+	
 
-			//ul切换
-		$('.banner .list-dota').on('click','li',function(){
-			index = $(this).index();
-			showPic();
-		});
-	function showPic(){
-		if(index>=10){
-			index = 0;
-		}else if(index<0){
-			index = 9;
-		}
-		$('#scroll').find('li').eq(index).animate({opacity:1}).siblings('li').animate({opacity:0});
-		$('.banner .list-dota li').eq(index).addClass('hh').siblings().removeClass('hh')
-	}
 	
 	//跳转到购物车
-
+		$('#cart').on('click',function(){
+		location.href='http://10.3.131.38:3000/html/shoppingcar.html'
+	})
 })

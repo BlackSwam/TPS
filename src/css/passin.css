@@ -20,3 +20,6 @@ form label{color: red; }
 .zc .getnum{background: #666; border: solid 1px #ccc; font-weight: 600;font-size: 14px;cursor: pointer;width: 113px;text-align: center;height: 37px;line-height: 37px;color: #FFFFFF;margin-top: 30px;}
 .zc .now{ width: 134px;font-size: 14px;height: 41px; color: #fff; background: #303f5c;font-weight: 600;position: relative;top: 28px;border: none;}
 .zc .check{ margin-top: 13px;font-size: 12px;}
+
+
+.box{ position: relative;top: -38px;left: 148px;border: 1px solid #000;background: #ffffff;color: res; color: #d22215;width: 109px;height: 37px;text-align: center;line-height: 37px;font-size: 20px;}

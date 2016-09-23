@@ -9,10 +9,11 @@
 	<link rel="stylesheet" type="text/css" href='assets/awesome/css_piugin/font-awesome.min.css'>
 	<link rel="stylesheet" type="text/css" href='assets/bootstrap/css/bootstrap.css' />
 	<script src="assets/jquery-1.12.0.js"></script>
-	<script src="assets/bootstrap/js/bootstrap.js"></script>
 	<script src="js/common.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.js"></script>
+	<script src="js/scrollpicture.js"></script>
 	<script src="js/index.js"></script>
-	
+	<script src="js/mycookie.js"></script>
 </head>
 
 <body>
@@ -34,7 +35,7 @@
 		</ul>
 		
 		<ul class="right ">
-			<li><a href="#">登录</a></li>
+			<li><a href="#">已登录</a></li>
 			<li>|</li>
 			<li><a href="#">注册</a></li>
 			<li class="middle"><i class="icon-star"></i>我的关注(0)</li>
@@ -57,7 +58,7 @@
 		
 		<a href="#" class="shopping-car">
 			<b class="num">0</b>
-			<div>
+			<div id="cart">
 				<i class="icon-car"></i>
 				购物车
 				<i class="icon-caret-down" style="color: #FFFFFF; font-size:15px ;"></i>
@@ -74,9 +75,9 @@
 				<a href="#"><strong>全部商品分类</strong></a>
 				<i class="icon-angle-down down" style="color: #FFFFFF;"></i>
 			</li>
-			<li><a href="#">商城首页</a></li>
+			<li><a href="http://10.3.131.38:3000/index.html#">商城首页</a></li>
 			<li>
-				<a href="#">新品上市</a>
+				<a href="http://10.3.131.38:3000/html/selectgoods.html">新品上市</a>
 				<img src="css/images/small-icon/new.gif">
 			</li>
 			<li>
@@ -88,6 +89,100 @@
 			<li><a href="#">旅游</a></li>
 			<li><a href="#">关于我们</a></li>
 		</ul>
+		
+		<!--下拉菜单-->
+		<ul id="menu">
+			<li ><p>服饰箱包</p></li> 
+			<li><p>母婴用品</p></li>
+			<li><p>美妆个护</p></li>
+			<li><p>汽车用品</p></li>
+			<li><p>体育户外用品</p></li>
+
+		</ul>
+		<div class="right-menu">
+			<ul class="second ">
+				  <li >
+				  	<div>
+				  		<h6>箱包></h6>
+				  		<p>时尚女包</p>
+				  	</div>
+				  </li>
+			</ul>
+			<ul class="second">
+			  <li >
+			  	<div>
+			  		<h6>婴幼儿奶粉></h6>
+			  		<p>可瑞康|爱他美|惠氏|荷仕兰|维达宝|WINNEY温妮|德国喜宝Hipp| 荷兰美素|牛栏</p>
+			  	</div>
+			  </li>
+			  <li >
+			  	<div>
+			  		<h6>婴幼儿奶粉></h6>
+			  		<p>可瑞康|爱他美|惠氏|荷仕兰|维达宝|WINNEY温妮|德国喜宝Hipp| 荷兰美素|牛栏</p>
+			  	</div>
+			  </li>
+			 <li >
+			  	<div>
+			  		<h6>婴幼儿奶粉></h6>
+			  		<p>可瑞康|爱他美|惠氏|荷仕兰|维达宝|WINNEY温妮|德国喜宝Hipp| 荷兰美素|牛栏</p>
+			  	</div>
+			  </li>
+			</ul>
+			<ul class="second">
+			  <li>
+			  	<div>
+			  		<h6>洗发护发</h6>
+			  		<p>洗发|护发|染发|造型</p>
+			  	</div>
+			  </li>
+			<li>
+			  	<div>
+			  		<h6>洗发护发</h6>
+			  		<p>洗发|护发|染发|造型</p>
+			  	</div>
+			  </li>
+			<li>
+			  	<div>
+			  		<h6>洗发护发</h6>
+			  		<p>洗发|护发|染发|造型</p>
+			  	</div>
+			  </li>
+			<li>
+			  	<div>
+			  		<h6>洗发护发</h6>
+			  		<p>洗发|护发|染发|造型</p>
+			  	</div>
+			  </li>
+			<li>
+			  	<div>
+			  		<h6>洗发护发</h6>
+			  		<p>洗发|护发|染发|造型</p>
+			  	</div>
+			  </li>
+			</ul>
+			<ul class="second">
+			  <li>
+			  	<div>
+			  		<h6>车载电器</h6>
+			  		<p>净化器</p>
+			  	</div>
+			  </li>
+			<li>
+			  	<div>
+			  		<h6>车载电器</h6>
+			  		<p>净化器</p>
+			  	</div>
+			  </li>
+
+			</ul>
+			<ul class="second">
+		  	  <li>
+			  	<div>
+			  		<h6>车载电器</h6>
+			  		<p>净化器</p>
+			  	</div>
+			  </li>
+		  	</ul>
 	</div>
 </div>
 
@@ -105,8 +200,8 @@
 		<li>3</li>
 		<li>1</li>
 	</ul>
-	<span class="right-btn "><i></i></span>
-	<span class="left-btn"><i></i></span>
+	<span class="right-btn " id="r1"><i></i></span>
+	<span class="left-btn" id="l1"><i></i></span>
 	<ul id="scroll">
 		<li class="show-on"><img src="image/banner/banner10.jpg"></li>
 		<li><img src="image/banner/banner1.jpg"> </li>
@@ -119,8 +214,11 @@
 		<li><img src="image/banner/banner8.jpg"></li>
 		<li><img src="image/banner/banner9.jpg"></li>
 	</ul>
+	
+
+
 </div>
-<!--<div class="myfocus"></div>-->
+
 
 <!--content-->
 <div class="out-content">
@@ -642,8 +740,8 @@
 					<i class="gift"></i>
 					<i class="car"></i>
 					<p class="country"><span class="CN"></span>中国</p>
-					<a target="_blank" title="巧曼浴巾2条装  纯棉加厚浴巾70CM*140CM   颜色随机发货 全国包邮" href="https://www.tps138.com/index/product?snm=10688795">
-						巧曼浴巾2条装  纯棉加厚浴巾70CM*140CM   颜色随机发货 全国包邮
+					<a target="_blank" title="巧曼浴巾2条装  纯棉加厚浴巾70CM*140CM   颜色随机发货 全国包邮" href="http://10.3.131.38:3000/html/detailgood.html">
+						费雪Fisher-Price猴公仔 毛绒玩具布娃娃玩偶FPL004 全国包邮
 					</a>
 					<span class="price">
 						￥98.19
@@ -988,9 +1086,22 @@
 				
 			</dd>
 		</dl>
-		<div class="goods-scroll">
-			<img src="css/images/goods-1/20160909140907_thumb.jpg" />
-		</div>
+	<div class="goods-scroll">
+		<ul class="list-dota " >
+			<li class="hh">1</li>
+			<li>2</li>
+			<li>3</li>
+			
+		</ul >
+		<span class="right-btn "><i></i></span>
+		<span class="left-btn" ><i></i></span>
+		<ul id="baby">
+			<li class="show-on"><img src="css/images/goods-1/20160909140907_thumb.jpg" /></li>
+			<li ><img src="css/images/goods-1/20160909140940_thumb.jpg" /></li>
+			<li ><img src="css/images/goods-1/20160909141001_thumb.jpg" /></li>
+		</ul>
+			
+	</div>
 		<div class="use-ul">
 			<ul >
 				<li class=" right-magin">
@@ -1054,7 +1165,7 @@
 	</div>
 	<div class="use-goods ">
 		<dl class="use-dl">
-			<dt><img src="css/images/goods-1/cate_20.jpg"/></dt>
+			<dt><img src="css/images/goods-1/cate_35.jpg"/></dt>
 			<dd>
 				<div class="pos-left">
 					<a>婴幼儿奶粉</a>
@@ -1070,13 +1181,25 @@
 				
 			</dd>
 		</dl>
-		<div class="goods-scroll">
-			<img src="css/images/goods-1/20160909140907_thumb.jpg" />
+		<div class="g-scroll">
+		<ul class="list-dota ">
+			<li class="hh">1</li>
+			<li>2</li>
+			<li>3</li>
+			
+		</ul >
+		<span class="right-btn " ><i></i></span>
+		<span class="left-btn" ><i></i></span>
+		<ul id="beautiful">
+			<li class="show-on"><img src="css/images/goods-1/20160909141139_thumb.jpg" /></li>
+			<li ><img src="css/images/goods-1/20160909141113_thumb.jpg" /></li>
+			<li ><img src="css/images/goods-1/20160909141048_thumb.jpg" /></li>
+		</ul>
 		</div>
 		<div class="use-ul">
 			<ul >
 				<li class=" right-magin">
-					<img src="css/images/goods-1/572152828677a_main.jpg">  
+					<img src="css/images/goods-1/572c6e0e944de_main.jpg">  
 					<i class="gift"></i>
 					<i class="car"></i>
 					<p class="country"><span class="CN"></span>中国</p>
@@ -1088,7 +1211,7 @@
 					</span>
 				</li>
 				<li >
-					<img src="css/images/goods-1/572152828677a_main.jpg"> 
+					<img src="css/images/goods-1/572c6e0e944de_main.jpg"> 
 					<i class="gift"></i>
 					<i class="car"></i>
 					<p class="country"><span class="CN"></span>中国</p>
@@ -1101,7 +1224,7 @@
 				</li>
 			
 				<li class=" right-magin top-magin">
-					<img src="css/images/goods-1/572152828677a_main.jpg">  
+					<img src="css/images/goods-1/572c6e0e944de_main.jpg">  
 					<i class="gift"></i>
 					<i class="car"></i>
 					<p class="country"><span class="CN"></span>中国</p>
@@ -1113,7 +1236,7 @@
 					</span>
 				</li>
 				<li class="top-magin">
-					<img src="css/images/goods-1/572152828677a_main.jpg">  
+					<img src="css/images/goods-1/572c6e0e944de_main.jpg">  
 					<i class="gift"></i>
 					<i class="car"></i>
 					<p class="country"><span class="CN"></span>中国</p>
@@ -1136,7 +1259,7 @@
 	</div>
 	<div class="use-goods ">
 		<dl class="use-dl">
-			<dt><img src="css/images/goods-1/cate_20.jpg"/></dt>
+			<dt><img src="css/images/goods-1/cate_92.jpg"/></dt>
 			<dd>
 				<div class="pos-left">
 					<a>婴幼儿奶粉</a>
@@ -1152,13 +1275,25 @@
 				
 			</dd>
 		</dl>
-		<div class="goods-scroll">
-			<img src="css/images/goods-1/20160909140907_thumb.jpg" />
+		<div class="g1-scroll">
+		<ul class="list-dota ">
+			<li class="hh">1</li>
+			<li>2</li>
+			<li>3</li>
+			
+		</ul >
+		<span class="right-btn " ><i></i></span>
+		<span class="left-btn" ><i></i></span>
+		<ul id="food">
+			<li class="show-on"><img src="css/images/goods-1/20160909141139_thumb.jpg" /></li>
+			<li ><img src="css/images/goods-1/20160909141236_thumb.jpg" /></li>
+			<li ><img src="css/images/goods-1/20160909141259_thumb.jpg" /></li>
+		</ul>
 		</div>
 		<div class="use-ul">
 			<ul >
 				<li class=" right-magin">
-					<img src="css/images/goods-1/572152828677a_main.jpg">  
+					<img src="css/images/goods-1/5771fbb5879dd_main.jpg">  
 					<i class="gift"></i>
 					<i class="car"></i>
 					<p class="country"><span class="CN"></span>中国</p>
@@ -1170,7 +1305,7 @@
 					</span>
 				</li>
 				<li >
-					<img src="css/images/goods-1/572152828677a_main.jpg"> 
+					<img src="css/images/goods-1/5771fbb5879dd_main.jpg"> 
 					<i class="gift"></i>
 					<i class="car"></i>
 					<p class="country"><span class="CN"></span>中国</p>
@@ -1183,7 +1318,7 @@
 				</li>
 			
 				<li class=" right-magin top-magin">
-					<img src="css/images/goods-1/572152828677a_main.jpg">  
+					<img src="css/images/goods-1/5771fbb5879dd_main.jpg">  
 					<i class="gift"></i>
 					<i class="car"></i>
 					<p class="country"><span class="CN"></span>中国</p>
@@ -1195,7 +1330,7 @@
 					</span>
 				</li>
 				<li class="top-magin">
-					<img src="css/images/goods-1/572152828677a_main.jpg">  
+					<img src="css/images/goods-1/5771fbb5879dd_main.jpg">  
 					<i class="gift"></i>
 					<i class="car"></i>
 					<p class="country"><span class="CN"></span>中国</p>
@@ -1218,7 +1353,7 @@
 	</div>
 	<div class="use-goods ">
 		<dl class="use-dl">
-			<dt><img src="css/images/goods-1/cate_20.jpg"/></dt>
+			<dt><img src="css/images/goods-1/cate_158.jpg"/></dt>
 			<dd>
 				<div class="pos-left">
 					<a>婴幼儿奶粉</a>
@@ -1234,13 +1369,25 @@
 				
 			</dd>
 		</dl>
-		<div class="goods-scroll">
-			<img src="css/images/goods-1/20160909140907_thumb.jpg" />
+		<div class="g2-scroll">
+			<ul class="list-dota ">
+				<li class="hh">1</li>
+				<li>2</li>
+				<li>3</li>
+				
+			</ul >
+			<span class="right-btn " ><i></i></span>
+			<span class="left-btn" ><i></i></span>
+			<ul id="clock">
+				<li class="show-on"><img src="css/images/goods-1/20160909141545_thumb.jpg" /></li>
+				<li ><img src="css/images/goods-1/20160909144744_thumb.jpg" /></li>
+				<li ><img src="css/images/goods-1/20160909144846_thumb.jpg" /></li>
+			</ul>
 		</div>
 		<div class="use-ul">
 			<ul >
 				<li class=" right-magin">
-					<img src="css/images/goods-1/572152828677a_main.jpg">  
+					<img src="css/images/goods-1/5729ab6e435ab_main.jpg">  
 					<i class="gift"></i>
 					<i class="car"></i>
 					<p class="country"><span class="CN"></span>中国</p>
@@ -1252,7 +1399,7 @@
 					</span>
 				</li>
 				<li >
-					<img src="css/images/goods-1/572152828677a_main.jpg"> 
+					<img src="css/images/goods-1/5729ab6e435ab_main.jpg"> 
 					<i class="gift"></i>
 					<i class="car"></i>
 					<p class="country"><span class="CN"></span>中国</p>
@@ -1265,7 +1412,7 @@
 				</li>
 			
 				<li class=" right-magin top-magin">
-					<img src="css/images/goods-1/572152828677a_main.jpg">  
+					<img src="css/images/goods-1/5729ab6e435ab_main.jpg">  
 					<i class="gift"></i>
 					<i class="car"></i>
 					<p class="country"><span class="CN"></span>中国</p>
@@ -1277,7 +1424,7 @@
 					</span>
 				</li>
 				<li class="top-magin">
-					<img src="css/images/goods-1/572152828677a_main.jpg">  
+					<img src="css/images/goods-1/5729ab6e435ab_main.jpg">  
 					<i class="gift"></i>
 					<i class="car"></i>
 					<p class="country"><span class="CN"></span>中国</p>
@@ -1300,7 +1447,7 @@
 	</div>
 	<div class="use-goods ">
 		<dl class="use-dl">
-			<dt><img src="css/images/goods-1/cate_20.jpg"/></dt>
+			<dt><img src="css/images/goods-1/cate_80.jpg"/></dt>
 			<dd>
 				<div class="pos-left">
 					<a>婴幼儿奶粉</a>
@@ -1316,13 +1463,25 @@
 				
 			</dd>
 		</dl>
-		<div class="goods-scroll">
-			<img src="css/images/goods-1/20160909140907_thumb.jpg" />
+		<div class="g3-scroll">
+			<ul class="list-dota ">
+				<li class="hh">1</li>
+				<li>2</li>
+				<li>3</li>
+				
+			</ul >
+			<span class="right-btn " ><i></i></span>
+			<span class="left-btn" ><i></i></span>
+			<ul id="health">
+				<li class="show-on"><img src="css/images/goods-1/20160909144342_thumb.jpg" /></li>
+				<li ><img src="css/images/goods-1/20160909171559_thumb.jpg" /></li>
+				<li ><img src="css/images/goods-1/20160909141158_thumb.jpg" /></li>
+			</ul>
 		</div>
 		<div class="use-ul">
 			<ul >
 				<li class=" right-magin">
-					<img src="css/images/goods-1/572152828677a_main.jpg">  
+					<img src="css/images/goods-1/57c0144e3c3d4_main.jpg">  
 					<i class="gift"></i>
 					<i class="car"></i>
 					<p class="country"><span class="CN"></span>中国</p>
@@ -1334,7 +1493,7 @@
 					</span>
 				</li>
 				<li >
-					<img src="css/images/goods-1/572152828677a_main.jpg"> 
+					<img src="css/images/goods-1/57c0144e3c3d4_main.jpg"> 
 					<i class="gift"></i>
 					<i class="car"></i>
 					<p class="country"><span class="CN"></span>中国</p>
@@ -1347,7 +1506,7 @@
 				</li>
 			
 				<li class=" right-magin top-magin">
-					<img src="css/images/goods-1/572152828677a_main.jpg">  
+					<img src="css/images/goods-1/57c0144e3c3d4_main.jpg">  
 					<i class="gift"></i>
 					<i class="car"></i>
 					<p class="country"><span class="CN"></span>中国</p>
@@ -1359,7 +1518,7 @@
 					</span>
 				</li>
 				<li class="top-magin">
-					<img src="css/images/goods-1/572152828677a_main.jpg">  
+					<img src="css/images/goods-1/57c0144e3c3d4_main.jpg">  
 					<i class="gift"></i>
 					<i class="car"></i>
 					<p class="country"><span class="CN"></span>中国</p>

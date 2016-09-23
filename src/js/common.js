@@ -22,6 +22,18 @@ $(function(){
 			$(this).removeClass('hover')
 		})
 	})
+	
+	$('#cart').on('click',function(){
+		location.href='http://10.3.131.38:3000/html/shoppingcar.html'
+	})
+	
+	
+	var str = getCookie("arr");
+	
+	var arr =JSON.parse(str);
+	
+	$('.num').text(arr.length);
+
 })
 
 

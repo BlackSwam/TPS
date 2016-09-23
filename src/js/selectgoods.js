@@ -11,10 +11,9 @@ $(function(){
 						$('<img/>').attr('src',item.src).appendTo($li);
 						$('<i/>').addClass('gift').css('background','url'+item.gift+' no-repeat 0 0').appendTo($li);
 						$('<i/>').addClass('car').css('background','url'+item.car+' no-repeat -124px 0').appendTo($li);
-						$('<p/>').addClass('country').html(item.country).appendTo($li);
-						//???
-						$('<span/>').addClass('CN').css('background','url'+item.CN+' no-repeat 0 -11px').appendTo($li).find('.country');
-						
+						var $p=$('<p/>');
+						$p.addClass('country').html(item.country).appendTo($li);
+						$('<span/>').addClass('CN').css('background','url'+item.CN+' no-repeat 0 -11px').appendTo($p);
 						$('<a/>').html(item.title).appendTo($li);
 						$('<span/>').addClass('price').html(item.price).appendTo($li);
 						$li.appendTo($listgoods);
@@ -58,4 +57,6 @@ $(function(){
 	}).on('click',function(){
 		$('html body').animate({scrollTop: 0})
 	})
+	
+	
 })

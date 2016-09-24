@@ -42,7 +42,7 @@ function scroll(oClass,oId){
 		}else if(index<0){
 			index = $(oId).find('li').length-1;
 		}
-		$(oId).find('li').eq(index).animate({opacity:1}).siblings('li').animate({opacity:0});
+		$(oId).find('li').eq(index).stop().animate({opacity:1}).siblings('li').stop().animate({opacity:0});
 		$(''+oClass+' .list-dota li').eq(index).addClass('hh').siblings().removeClass('hh')
 	}
 }

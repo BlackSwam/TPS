@@ -28,8 +28,10 @@ $(function(){
 		
 		
 //		$('.right-b').on('click',function(){
+//			
 //			var idx=$(this).index();
-//			$('.middle-xx').eq(idx).text('0')
+//		
+//			
 //		})
 
 		
@@ -44,8 +46,10 @@ $(function(){
 	}
 
 		//总共的商品数量
-	var str = getCookie("arr");
-	
-	var arr =JSON.parse(str);
-	$('#d-num').text(arr.length)
+	if( getCookie("arr")){
+		var str = getCookie("arr");
+		var arr =JSON.parse(str);
+		$('#d-num').text(arr.length)
+	}
+
 })

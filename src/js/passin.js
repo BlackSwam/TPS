@@ -52,7 +52,7 @@ $(function(){
 //					console.log(item)
 					if(arr[0].value==item.tel&&arr[1].value==item.password)
 					{
-						location.href='http://10.3.131.38:3000/index.html'
+						location.href='http://10.3.131.38:8000/index.html'
 						return false;
 					}
 					else{

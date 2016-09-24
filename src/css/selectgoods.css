@@ -13,7 +13,7 @@
 .in-fff h5,.in-fff dl{float: right;}
 .select-goods dt{width: 162px;height: 42px;border: 1px solid #000000;text-align: center;margin:5px 10px 0 0;}
 .select-goods i{display:inline-block ;position: relative; right: 0;top: 0;height:42px;line-height: 42px;font-size: 20px;border-left: 1px solid #333;padding-left:17px; margin-left: 65px;}
-.in-fff dd{margin-left:0 ;width: 162px; border: 1px solid #000000;border-top: none;}
+.in-fff dd{margin-left:0 ;width: 162px; border: 1px solid #000000;border-top: none;position: absolute;background: #FFFFFF;}
 .in-fff ul{width: 162px;margin-left: 0;}
 .in-fff ul li{width: 142px;height: 40px; padding: 0 10px;border-bottom:1px dotted #ddd;line-height: 40px;}
 .in-fff h5{margin-right: 5px;}

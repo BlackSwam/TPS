@@ -115,3 +115,7 @@ p{font-size: 12px;}
 
 /*浏览历史*/
 .history{min-height: 100px;}
+
+
+/*边框线
+.listgoods .top-border,.listgoods .bottom-border,.listgoods .right-border,.listgoods .left-border{display:block;width: 232px;height: 300px;border: 1px solid #000000;}*/

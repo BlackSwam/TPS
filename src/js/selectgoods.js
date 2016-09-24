@@ -11,9 +11,10 @@ $(function(){
 						$('<img/>').attr('src',item.src).appendTo($li);
 						$('<i/>').addClass('gift').css('background','url'+item.gift+' no-repeat 0 0').appendTo($li);
 						$('<i/>').addClass('car').css('background','url'+item.car+' no-repeat -124px 0').appendTo($li);
-						var $p=$('<p/>');
-						$p.addClass('country').html(item.country).appendTo($li);
-						$('<span/>').addClass('CN').css('background','url'+item.CN+' no-repeat 0 -11px').appendTo($p);
+						$('<p/>').addClass('country').html(item.country).appendTo($li);
+						//???
+						$('<span/>').addClass('CN').css('background','url'+item.CN+' no-repeat 0 -11px').appendTo($li).find('.country');
+						
 						$('<a/>').html(item.title).appendTo($li);
 						$('<span/>').addClass('price').html(item.price).appendTo($li);
 						$li.appendTo($listgoods);
@@ -58,5 +59,15 @@ $(function(){
 		$('html body').animate({scrollTop: 0})
 	})
 	
-	
+	//下拉菜单
+	$('.a-select').on('click',function(){
+		$('.select-goods dd').show();
+		$('.select-goods dd ul').on('click','li',function(){
+			var abc=$(this).text();
+			$('#oInput').html(abc);
+			$('.select-goods dd ').css('display','none')
+		})
+
+	})
+		
 })

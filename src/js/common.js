@@ -24,15 +24,21 @@ $(function(){
 	})
 	
 	$('#cart').on('click',function(){
-		location.href='http://10.3.131.38:3000/html/shoppingcar.html'
+		location.href='http://10.3.131.38:8000/html/shoppingcar.html'
 	})
 	
 	
-	var str = getCookie("arr");
+
+	if(getCookie("arr")){
+		var str = getCookie("arr");
 	
-	var arr =JSON.parse(str);
+		var arr =JSON.parse(str);
+		
+		$('.num').text(arr.length);
+	}
+
 	
-	$('.num').text(arr.length);
+
 
 })
 

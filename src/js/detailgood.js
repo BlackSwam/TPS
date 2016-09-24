@@ -10,7 +10,7 @@ $(function(){
 		$(this).lxzoom({width:460,height:460})
 	})
 	
-//	商品评价bug!!!!
+//	商品评价
 	$('.w1200').on('click','li',function(){
 		$(this).addClass('on').siblings().removeClass('on');
         $(this).find('i').show(). parent().siblings().find('i').hide();
